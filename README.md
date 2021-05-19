@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LanzamientoDeAceitunas
 Descripción del problema
 En un lejano imperio intergaláctico, se
@@ -118,3 +119,6 @@ Nota: Es válido usar como respuesta
 posible el valor R = 0, que corresponde a
 una cancha tan pequeña que nunca entra
 ningún lanzamiento.
+=======
+# LanzamientoDeAceitunas
+>>>>>>> 10522f96455cdb99408f85349a1580876420a55f
