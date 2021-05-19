@@ -6,8 +6,8 @@ public class Partida {
 	private Jugador bueno = new Jugador();
 	private Jugador malo = new Jugador();
 	private Circulo circuloMayorPuntaje;
-	
-	public void cargarTiros(List <Aceituna> lista) {
+
+	public void cargarTiros(List<Aceituna> lista) {
 		for (Aceituna aceituna : lista) {
 			if (aceituna.getX() > 0)
 				bueno.agregarAceituna(aceituna);
@@ -15,9 +15,9 @@ public class Partida {
 				malo.agregarAceituna(aceituna);
 		}
 	}
-	
+
 	public void cambiarReglas() {
-		this.circuloMayorPuntaje = new Circulo (0);
+		this.circuloMayorPuntaje = new Circulo(0);
 		int diferenciaPuntaje = 0;
 		for (Aceituna aceituna : bueno.getLanzamientos()) {
 			Circulo a = new Circulo(aceituna.distanciaACentro());
@@ -27,14 +27,13 @@ public class Partida {
 			}
 
 		}
-		
+
 	}
-	
-	public int getRadioCuadrado () {
-		if (this.circuloMayorPuntaje==null)
+
+	public int getRadioCuadrado() {
+		if (this.circuloMayorPuntaje == null)
 			return 0;
-		return (int)this.circuloMayorPuntaje.getRadioCuadrado();
+		return (int) this.circuloMayorPuntaje.getRadioCuadrado();
 	}
-	
-	
+
 }
